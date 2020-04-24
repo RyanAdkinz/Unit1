@@ -4,29 +4,33 @@ public class App {
     public static void main(String[] args) throws Exception {
 
 
-        System.out.println("Double or single digit?");
+        System.out.println("Start first loop");
 
-       for (int i = 20; i >= 1; i = i - 1){
-
-            if (i > 10)
-            System.out.println(i + " is double digit");
-            if (i < 10)
-            System.out.println(i + " is sigle digit");
+       {for (int j = 1; j <= 10; j++)
+    
+        if (j == 5){
+         System.out.println("five");
         }
-     {
-         System.out.println("Nice!");
-     }
-     {
-         System.out.println("Fast food");
+       else{
+            System.out.println(j);     }                             
+        
+       }
+         System.out.println("End first loop");
+         System.out.println("Start second loop");
+       
+    
+        for (int j= 100; j <= 200; j= j + 10){
+            System.out.println(j);
+        if (j == 150){
+
+            for (int x = 150; x <= 159; x++){
+         System.out.println(x); }
+    
      }
      
-        for (int j= 0; j <= 4; j= j + 1){
-
-        System.out.println("Burgers");
-        System.out.println("Fries");
-
-     }
-     System.out.println("Nice!");
+     
+     
         }
-    
+        {System.out.println("End Second loop");}
+    }
  }
