@@ -1,36 +1,41 @@
 package app;
 
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) throws Exception {
 
 
-        System.out.println("Start first loop");
+        Scanner input = new Scanner(System.in);
 
-       {for (int j = 1; j <= 10; j++)
-    
-        if (j == 5){
-         System.out.println("five");
-        }
-       else{
-            System.out.println(j);     }                             
-        
-       }
-         System.out.println("End first loop");
-         System.out.println("Start second loop");
-       
-    
-        for (int j= 100; j <= 200; j= j + 10){
-            System.out.println(j);
-        if (j == 150){
+        System.out.println("You should enter your first name buddy");
+        String name = input.nextLine();
 
-            for (int x = 150; x <= 159; x++){
-         System.out.println(x); }
-    
-     }
-     
-     
-     
-        }
-        {System.out.println("End Second loop");}
+        System.out.println("Wassup, " + name);
+
+         System.out.println("Wanna enter your last?");
+        String last = input.nextLine();
+
+        System.out.println("I like your last name, " + last);
+
+         System.out.println("How old are you?");
+        String age = input.nextLine();
+
+        System.out.println("You're only " + age + "?");
+
+         System.out.println("Are you a freshman, sophomore, junior, or senior?");
+        String grade = input.nextLine();
+
+        System.out.println("You must know a lot if you're a " + grade);
+
+         System.out.println("What's your favorite color?");
+        String color = input.nextLine();
+
+        System.out.println(color + " is a great color!");
+
+
+
+
+
     }
  }
