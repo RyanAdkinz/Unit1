@@ -8,15 +8,14 @@ public class App {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.println("What's the password?");
-        String enteredPassword = input.nextLine();
+        System.out.println("What's the count?");
+        String num = input.nextLine();
 
-        if (enteredPassword.equals("183726073"))
-        System.out.println("Access Granted");
-
-        else
-        System.out.println("Access Denied");
-
-
+       System.out.println(">" + num + "(user entered)");
+        
+       for (int i= 1; i<= 7; i++) {
+           System.out.println(">" + i);
+       }
+  
     }
  }
