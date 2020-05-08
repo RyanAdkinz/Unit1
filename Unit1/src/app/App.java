@@ -6,51 +6,34 @@ public class App {
     public static void main(String[] args) throws Exception {
 
 
-        String nme;
-        String adj;
-        String ani;
-        String age;
-        String ver;
-        String foo;
-        String spt;
-        String act;
-        String plc;
-        String brd;
-        
+        int num1;
+        int num2;
+        String print;
+     
         Scanner input = new Scanner(System.in);
+               
+        System.out.println("Please a number");
+         num1 = input.nextInt();
 
-        
-        System.out.println("Please enter your name.");
-         nme = input.nextLine();
+        System.out.println("Please enter another number");
+         num2 = input.nextInt();
 
-        System.out.println("Please enter your age.");
-         age = input.nextLine();
+        System.out.println("Would you like to add, subtract, multiply, or divide these?");
+         print = input.nextLine();
 
-        System.out.println("Please enter an adjective.");
-        adj = input.nextLine();
+        if (print == "add")
+         System.out.println(num1 + num2);
 
-        System.out.println("Please enter an animal.");
-        ani = input.nextLine();
+        if (print == "subtract")
+         System.out.println(num1 - num2);
 
-        System.out.println("Please enter a verb.");
-        ver = input.nextLine();
+        if (print == "multiply")
+         System.out.println(num1 * num2);
+          
+        if (print == "divide")
+         System.out.println(num1 / num2);
 
-        System.out.println("Please enter a food.");
-        foo = input.nextLine();
 
-        System.out.println("Please enter a sport.");
-        spt = input.nextLine();
-
-        System.out.println("Please enter your favorite activity.");
-        act = input.nextLine();
-
-        System.out.println("Please enter a place.");
-        plc = input.nextLine();
-
-        System.out.println("Please enter a shoe brand.");
-        brd = input.nextLine();
-
-        System.out.println(nme + age + adj + ani + ver +  foo + spt + act + plc + brd);
-      
+       
     }
  }
