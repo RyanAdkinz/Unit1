@@ -21,17 +21,17 @@ public class App {
         System.out.println("Would you like to add, subtract, multiply, or divide these?");
          print = input.nextLine();
 
-        if (print == "add")
-         System.out.println(num1 + num2);
+        {if (print == "add")
+         System.out.println(num1 + num2); }
 
-        if (print == "subtract")
-         System.out.println(num1 - num2);
+        {if (print == "subtract")
+         System.out.println(num1 - num2); }
 
-        if (print == "multiply")
-         System.out.println(num1 * num2);
+        {if (print == "multiply")
+         System.out.println(num1 * num2); }
           
-        if (print == "divide")
-         System.out.println(num1 / num2);
+        {if (print == "divide")
+         System.out.println(num1 / num2); }
 
 
        
