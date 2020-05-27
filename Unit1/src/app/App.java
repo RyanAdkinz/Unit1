@@ -4,56 +4,55 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        String name;
+        String pass;
+        String pa;
+        String na;
+        String acc;
+        int dig;
+        int num;
+        int wit;
 
-        Dog dog1 = new Dog();
-        Dog dog2 = new Dog();
-        Dog dog3 = new Dog();
-        Scanner input = new Scanner (System.in);
 
-        dog1.name = "Luna";
-        dog2.name = "Cheezit";
-        dog3.name = "Roofy";
-       
-        dog1.breed = "Husky";
-        dog2.breed = "German Sheperd";
-        dog3.breed = "Yorky";
-       
-        dog1.age = "2";
-        dog2.age = "3";
-        dog3.age = "4";
+        Scanner input = new Scanner(System.in);
 
-        dog1.color = "Black and White";
-        dog2.color = "Brown and Black";
-        dog3.color = "Brown and Black";
+        System.out.println("What is your name?");
+        na = input.nextLine();
 
-        dog1.speed = "Very Fast";
-        dog2.speed = "Very Fast";
-        dog3.speed = "Average Speed";
+        System.out.println("How much money are you starting with?");
+        dig = input.nextInt();
 
-        dog1.strength = "Very Strong";
-        dog2.strength = "Very Strong";
-        dog3.strength = "Weak";
-       
-        System.out.println(dog1.name);
-        System.out.println(dog1.breed);
-        System.out.println(dog1.age);
-        System.out.println(dog1.color);
-        System.out.println(dog1.speed);
-        System.out.println(dog1.strength);
+        System.out.println("Please enter a password");
+        pa = input.nextLine();
 
-        System.out.println(dog2.name);
-        System.out.println(dog2.breed);
-        System.out.println(dog2.age);
-        System.out.println(dog2.color);
-        System.out.println(dog2.speed);
-        System.out.println(dog2.strength);
+        System.out.println("Acc Created!");
+        pa = input.nextLine();
 
-        System.out.println(dog3.name);
-        System.out.println(dog3.breed);
-        System.out.println(dog3.age);
-        System.out.println(dog3.color);
-        System.out.println(dog3.speed);
-        System.out.println(dog3.strength);
+        System.out.println("Please enter name");
+        name = input.nextLine();
+
+        System.out.println("Please enter password");
+        pass = input.nextLine();
+
+        if (pa == pass)
+        System.out.println("You're in");
+
+        System.out.println("What would you like to do? (1= withdraw) (2= deposit)");
+        num = input.nextInt();
+
+        if (num == 1)
+        System.out.println("How much would you like to withdraw?");
+        wit = input.nextInt();
+        System.out.println("You withdrew" + " " + (wit) + ". " + "Your new balance is" + " " + (dig - wit) +".");
+
+         if (num == 2)
+        System.out.println("How much would you like to deposit?");
+        wit = input.nextInt();
+        System.out.println("You deposited" + " " + (wit) + ". " + "Your new balance is" + " " + (dig + wit) +".");
+
+        
+
+        
 
     }
  }
